@@ -1,3 +1,4 @@
+/*Declaracion de variables root*/
 :root{
   --white:#ffffff;
   --black:#212121;
@@ -8,6 +9,11 @@
 
 html{
   font-size:62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body{
@@ -26,7 +32,7 @@ body{
 }
 
 .contenedor{
-  width: 120rem;
+  max-width: 120rem;
   margin-top: 0;
   margin-right: auto;
   margin-bottom:0;
@@ -37,19 +43,58 @@ body{
   background-color:var(--secundario); 
 }
 
+/*Navegacion principal*/
 .navegacion-principal{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
+/*Media Querie*/
+@media (min-width: 768px) {
+  .navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/*Navegacion principal hove links*/
 .navegacion-principal a:hover{
   background-color:var(--primario);
   color:var(--black);
 }
 
+/*Navegacion principal links*/
 .navegacion-principal a{
+  text-align: center;
   padding: 1rem;
   color:var(--white);
   text-decoration: none;
   font-size:2rem;
+}
+
+.hero{
+  background-image: url(/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.contact{
+  padding: 1rem;
+  color:var(--white);
+  text-decoration: none;
+  font-size:2rem;
+}
+
+.contact:hover{
+  color:var(--black);
+}
+.hero{
+  text-align: center;
+  height: 41rem;
+  padding:2rem;
+}
+
+.url{
+  color:var(--black);
+  text-decoration: none;
 }
