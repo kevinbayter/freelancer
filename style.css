@@ -84,6 +84,7 @@ body {
   text-decoration:none;
   text-transform:uppercase;
   font-weight:bold;
+  border-radius:.5rem;
 }
 
 .boton:hover {
