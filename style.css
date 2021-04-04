@@ -22,6 +22,7 @@ body {
   font-size: 16px;
   /*1rem = 10px*/
   font-family: "Righteous", cursive;
+  background-image: linear-gradient(to top, #dfe9f3 0%, var(--white) 100%);
 }
 
 .titulo {
@@ -32,6 +33,25 @@ body {
 
 .titulo span {
   font-size: 2rem;
+}
+
+.hero {
+  background-image: url(/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 41rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+
+.sombra {
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.59);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.59);
+  background-color:var(--white);
+  padding:2rem;
+  border-radius:1rem;
 }
 
 .contenedor {
@@ -78,26 +98,19 @@ body {
 .boton {
   background-color: var(--secundario);
   color: var(--white);
-  padding:1rem 3rem;
+  padding: 1rem 3rem;
   margin-top: 1rem;
-  font-size:2rem;
-  text-decoration:none;
-  text-transform:uppercase;
-  font-weight:bold;
-  border-radius:.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
 }
 
 .boton:hover {
   color: var(--black);
 }
 
-.hero {
-  background-image: url(/img/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 41rem;
-  position: relative;
-}
 
 .url {
   color: var(--black);
@@ -116,6 +129,6 @@ body {
   justify-content: center;
 }
 
-.location{
-  padding-bottom:1rem;
+.location {
+  padding-top: 1rem;
 }
