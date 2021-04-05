@@ -10,7 +10,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 *,
@@ -18,6 +18,12 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+.servicios, .navegacion-principal, .form{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
 
 body {
   font-size: 16px;
@@ -148,10 +154,6 @@ h2 {
   padding-top: 1rem;
 }
 
-.servicios, .navegacion-principal, .form{
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
 
 /* Servicios */
 @media (min-width: 768px) {
